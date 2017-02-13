@@ -1,0 +1,45 @@
+#include "IntStack.h"
+#include "SLL.h"
+#include <iostream>
+using namespace std;
+using namespace comp201;
+int main(int argc, char *argv[])
+{
+	IntStack y;
+	for (int i = 1; i < argc; i++)
+	{
+		//if (argv[i] == "+")
+		//{
+		//	int x1 = y.pop();
+		//	int x2 = y.pop();
+		//	y.push(x1 + x2);
+		//}
+		//else if (argv[i] == "-")
+		//{
+		//	int x1 = y.pop();
+		//	int x2 = y.pop();
+		//	y.push(x2 - x1);
+		//}
+		//else if (argv[i] == "x")
+		//{
+		//	int x1 = y.pop();
+		//	int x2 = y.pop();
+		//	y.push(x1 * x2);
+		//}
+		//else if (argv[i] == "/")
+		//{
+		//	int x1 = y.pop();
+		//	int x2 = y.pop();
+		//	y.push(x2 / x1);
+		//}
+		//else
+		//{
+		//	y.push(atoi(argv[i]));
+		//}
+		y.push(atoi(argv[i]));
+	}
+	int x1 = y.pop();
+	int x2 = y.pop();
+	cout << y.push(x1 + x2) << endl;
+	
+}
